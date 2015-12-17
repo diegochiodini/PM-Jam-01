@@ -79,7 +79,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &193432
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,6 +96,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &196114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 443918}
+  m_Layer: 0
+  m_Name: PollenSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &406018
 Transform:
   m_ObjectHideFlags: 1
@@ -103,11 +118,23 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162336}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.14999998, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 444238}
   m_RootOrder: 4
+--- !u!4 &443918
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196114}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.15999997, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 444238}
+  m_RootOrder: 5
 --- !u!4 &444238
 Transform:
   m_ObjectHideFlags: 1
@@ -115,7 +142,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 176802}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: .143000007, y: -.0939999968, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 484742}
@@ -123,6 +150,7 @@ Transform:
   - {fileID: 493156}
   - {fileID: 469286}
   - {fileID: 406018}
+  - {fileID: 443918}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &469286
@@ -144,7 +172,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00800000038, y: 1.15999997, z: 0}
+  m_LocalPosition: {x: 0, y: 1.15999997, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 444238}
@@ -707,7 +735,7 @@ MonoBehaviour:
           value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000803f09e6393f00f1f03b0000803f000000803f0000803e0000803e0000803f00fd78133fe2e1e13e0000803f0000803f004c4b8b3e370b143f0000803f0000803f0006babe3eb458683fb5b4743f0000803f00cd387d3f0000803f5c5a5a3e0000803f000000803f000000803f000000803f000000000000000000000000000000000000000000000000000000000000803f01706574616c436f6c6f75720000803f000000803f0000000100010000000000803f0000803f0000803f000000003f00000000000000000000011600000000000000506574616c7347726f776e000000000000
+        byteData: 0000803f09e6393f00f1f03b0000803f000000803f0000803e0000803e0000803f00fd78133fe2e1e13e0000803f0000803f004c4b8b3e370b143f0000803f0000803f0006babe3eb458683fb5b4743f0000803f00cd387d3f0000803f5c5a5a3e0000803f000000803f000000803f000000803f000000000000000000000000000000000000000000000000000000000000803f01706574616c436f6c6f75720000803f000000803f0000000100010000000000803f0000803f0000803f000000803f00000000000000000000011600000000000000506574616c7347726f776e000000000000
         arrayParamSizes: 06000000060000000200000002000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmColor
@@ -763,8 +791,8 @@ MonoBehaviour:
         - realTime
         - stopOnExit
         - loopDontFinish
-        paramDataPos: 0000000000000000110000002200000033000000440000005500000001000000660000006b00000070000000750000007a0000007f0000008400000002000000000000000100000003000000a0000000a50000000200000000000000aa00000001000000ab00000000000000ac000000ae000000b0000000b1000000010000000000000003000000b2000000bf000000c4000000c9000000ce000000d2000000d6000000d6000000e1000000e3000000e5000000
-        paramByteDataSize: 00000000110000001100000011000000110000001100000011000000000000000500000005000000050000000500000005000000050000001c000000000000000000000000000000000000000500000005000000000000000000000001000000000000000100000000000000020000000200000001000000010000000000000000000000000000000d0000000500000005000000050000000400000004000000000000000b000000020000000200000002000000
+        paramDataPos: 0000000000000000110000002200000033000000440000005500000001000000660000006b00000070000000750000007a0000007f0000008400000002000000000000000100000003000000a0000000a50000000200000000000000aa00000001000000ab00000000000000ac000000ae000000b0000000b1000000010000000000000003000000b2000000bf000000c4000000c9000000ce000000d2000000d6000000e1000000e1000000e3000000e5000000
+        paramByteDataSize: 00000000110000001100000011000000110000001100000011000000000000000500000005000000050000000500000005000000050000001c000000000000000000000000000000000000000500000005000000000000000000000001000000000000000100000000000000020000000200000001000000010000000000000000000000000000000d00000005000000050000000500000004000000040000000b00000000000000020000000200000002000000
     - name: Grow Middle
       description: 
       colorIndex: 0
@@ -782,7 +810,7 @@ MonoBehaviour:
           name: MiddleGrown
           isSystemEvent: 0
           isGlobal: 0
-        toState: Flower Grown
+        toState: Spawning Pollen
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -951,7 +979,7 @@ MonoBehaviour:
           value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000803fe5e4243fe0e1e13d0000803f000000803fa6a5453fa6a5453f0000803f000000803f70c0633f000000000000803f000000803f000000803f000000803f000000000000000000000000000000803f016d6964646c65436f6c6f7572010001000000000000803f0000803f0000803f000000003f000000000000000000000116000000000000004d6964646c6547726f776e000000000000
+        byteData: 0000803fe5e4243fe0e1e13d0000803f000000803fa6a5453fa6a5453f0000803f000000803f70c0633f000000000000803f000000803f000000803f000000803f000000000000000000000000000000803f016d6964646c65436f6c6f7572010001000000000000803f0000803f0000803f000000003f000000803e00000000000116000000000000004d6964646c6547726f776e000000000000
         arrayParamSizes: 0300000003000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmColor
@@ -992,14 +1020,120 @@ MonoBehaviour:
         - loopDontFinish
         paramDataPos: 000000000000000011000000220000000100000033000000380000003d00000042000000000000005f00000061000000630000006400000000000000650000000100000000000000000000006600000073000000780000007d00000082000000860000008a0000008a000000950000009700000099000000
         paramByteDataSize: 00000000110000001100000011000000000000000500000005000000050000001d000000000000000200000002000000010000000100000000000000010000000000000000000000000000000d0000000500000005000000050000000400000004000000000000000b000000020000000200000002000000
-    - name: Flower Grown
+    - name: Spawning Pollen
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 55
         y: 412
-        width: 114
+        width: 130
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Off
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.CreateObject
+        - HutongGames.PlayMaker.Actions.SelectRandomVector3
+        - HutongGames.PlayMaker.Actions.AddForce2d
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000700000010000000
+        actionHashCodes: ac65eef14486b37a4d7f5ba1
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: pollen
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: {fileID: 113140, guid: 89b8feef15c5732418532e74d531e1fb, type: 2}
+        - useVariable: 1
+          name: pollenSpawnPoint
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: pollenSpawned
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: pollenSpawned
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000000000000000000000000010000000000000000000000000100000000000000000000400000804000000000000000a0400000c0400000000000000020410000004000000000000000803f000000803f000000803f0000000000000000000000000001706f6c6c656e537061776e466f726365000000000000000001000000000000000001000000000100000000010000484200004843000000000000
+        arrayParamSizes: 0300000003000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmVector3
+        - HutongGames.PlayMaker.FsmFloat
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 13000000130000001c0000001c0000001300000011000000100000000c0000001c0000001c0000001c0000000c0000000f0000000f0000000f0000001c0000001400000025000000250000000f0000000f0000001c00000001000000
+        paramName:
+        - gameObject
+        - spawnPoint
+        - position
+        - rotation
+        - storeObject
+        - networkInstantiate
+        - networkGroup
+        - vector3Array
+        - 
+        - 
+        - 
+        - weights
+        - 
+        - 
+        - 
+        - storeVector3
+        - gameObject
+        - atPosition
+        - vector
+        - x
+        - y
+        - vector3
+        - everyFrame
+        paramDataPos: 0000000001000000000000000d000000020000001a0000001c00000000000000210000002e0000003b00000001000000480000004d000000520000005700000000000000740000007d000000860000008b000000900000009d000000
+        paramByteDataSize: 00000000000000000d0000000d000000000000000200000005000000000000000d0000000d0000000d000000000000000500000005000000050000001d00000000000000090000000900000005000000050000000d00000001000000
+    - name: Off
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 64
+        y: 539
+        width: 100
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -1034,6 +1168,9 @@ MonoBehaviour:
         paramDataPos: 
         paramByteDataSize: 
     events:
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
     - name: LeafGrown
       isSystemEvent: 0
       isGlobal: 0
@@ -1059,7 +1196,13 @@ MonoBehaviour:
       boolVariables: []
       stringVariables: []
       vector2Variables: []
-      vector3Variables: []
+      vector3Variables:
+      - useVariable: 1
+        name: pollenSpawnForce
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {x: 0, y: 0, z: 0}
       colorVariables:
       - useVariable: 1
         name: middleColour
@@ -1100,6 +1243,24 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: {fileID: 188662}
+      - useVariable: 1
+        name: pollen
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {fileID: 113140, guid: 89b8feef15c5732418532e74d531e1fb, type: 2}
+      - useVariable: 1
+        name: pollenSpawnPoint
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
+        name: pollenSpawned
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
       objectVariables: []
       materialVariables: []
       textureVariables: []
