@@ -74,7 +74,6 @@ public class SimpleMenu : SwitchMenu
     {
         activeChild = (int)MenuTags.MENU_MAIN;
         HomeMenu homeMenu = GetActiveObjectComponent<HomeMenu>();
-        homeMenu.hotKeyAction = PlayGame;
         UpdateScoreLabel(homeMenu.scoreLabel);
     }
 
@@ -100,7 +99,6 @@ public class SimpleMenu : SwitchMenu
         activeChild = (int)MenuTags.MENU_WIN;
         WinMenu winMenu = GetActiveObjectComponent<WinMenu>();
         winMenu.levelLabel.text = "LVL. " + (currentLevel + 1).ToString();
-        winMenu.hotKeyAction = PlayGame;
         UpdateScoreLabel(winMenu.scoreLabel);
     }
 
@@ -109,7 +107,6 @@ public class SimpleMenu : SwitchMenu
         activeChild = (int)MenuTags.MENU_GAMEOVER;
         GameOverMenu gameOverMenu = GetActiveObjectComponent<GameOverMenu>();
         gameOverMenu.levelLabel.text = "LVL. " + currentLevel.ToString();
-        gameOverMenu.hotKeyAction = Restart;
         UpdateScoreLabel(gameOverMenu.scoreLabel);
     }
 

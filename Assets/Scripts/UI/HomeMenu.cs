@@ -2,12 +2,14 @@
 using System.Collections;
 using UnityEngine.UI;
 using System;
+using UnityEngine.Events;
 
 public class HomeMenu : MonoBehaviour 
 {
     public Text versionLabel;
     public Text scoreLabel;
-    public Action hotKeyAction;
+
+    public UnityEvent OnSpaceBarDown;
 
     private void Start()
     {
@@ -16,13 +18,9 @@ public class HomeMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (OnSpaceBarDown != null && Input.GetKeyUp(KeyCode.Space))
         {
-            if (hotKeyAction != null)
-            {
-                hotKeyAction();
-            }
+            OnSpaceBarDown.Invoke();
         }
-
     }
 }
