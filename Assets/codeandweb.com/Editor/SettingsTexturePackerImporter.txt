@@ -1,11 +1,14 @@
 version: 2
-importPivots: 1
+importPivots: 0
 tpsheetFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+- Assets/Media/Sprites/Background.tpsheet
 - Assets/Media/Sprites/Islands.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets/Media/Sprites/Background.png
 - Assets/Media/Sprites/Islands.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
 - 
