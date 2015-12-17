@@ -62,7 +62,6 @@ public class MainController : SingletonBehaviour<MainController>, IPointerClickH
 
     private void Start()
     {
-        //menu.CharacterSelection();
         LoadHome();
     }
 
@@ -419,6 +418,11 @@ public class MainController : SingletonBehaviour<MainController>, IPointerClickH
 
     private void RefreshUI()
     {
+    }
+
+    public void OnCharacterSelection()
+    {
+        menu.CharacterSelection();
     }
 
     public void OnPlayGameClick()
