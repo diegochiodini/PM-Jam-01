@@ -8,7 +8,7 @@ using Data;
 using GameUtils;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
-
+using UnityEngine.Assertions;
 
 public class GameLevelManager : LevelDatabase, LevelProviderInterface, SerializableInterface
 {
@@ -42,7 +42,7 @@ public class GameLevelManager : LevelDatabase, LevelProviderInterface, Serializa
 
         set
         {
-            Assert.That(levelData[currentLevel+1].status == LevelStates.LOCKED, "You can skip only a unlocked, not completed level");
+            Assert.IsTrue(levelData[currentLevel+1].status == LevelStates.LOCKED, "You can skip only a unlocked, not completed level");
 
             bool oldValue = levelData[currentLevel].isSkipped;
             if (!oldValue && value)
@@ -76,7 +76,7 @@ public class GameLevelManager : LevelDatabase, LevelProviderInterface, Serializa
         if (levelData == null)
         {
             //first time we run the load, let's create the levels
-            Assert.That(levelCount > 0, "You must have at least one level to load.");
+            Assert.IsTrue(levelCount > 0, "You must have at least one level to load.");
             levelData = new LevelData[levelCount];
 
             for (int i = 0; i < levelCount; i++ )
@@ -101,7 +101,7 @@ public class GameLevelManager : LevelDatabase, LevelProviderInterface, Serializa
             levelData = clone;
         }
 
-        Assert.That(levelData.Length == levelCount, "You are loading an old set of data. Delete profile.dat please.");
+        Assert.IsTrue(levelData.Length == levelCount, "You are loading an old set of data. Delete profile.dat please.");
     }
 
     public override void UnlockNextLevel()

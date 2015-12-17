@@ -3,7 +3,7 @@ using UnityEditor;
 using System.Collections;
 using GameUtils;
 using System;
-
+using UnityEngine.Assertions;
 
 public class Tools 
 {
@@ -22,7 +22,7 @@ public class Tools
     {
         //Debug.Log("Menu forward");
         SwitchMenu menu = GameObject.FindObjectOfType<SwitchMenu>();
-        Assert.NotNull(menu, "SwitchMenu not found.");
+        Assert.IsNotNull(menu, "SwitchMenu not found.");
         menu.EditorMenuForward();
         
     }
@@ -32,7 +32,7 @@ public class Tools
     {
         //Debug.Log("Menu backward");
         SwitchMenu menu = GameObject.FindObjectOfType<SwitchMenu>();
-        Assert.NotNull(menu, "SwitchMenu not found.");
+        Assert.IsNotNull(menu, "SwitchMenu not found.");
         menu.EditorMenuBackward();
     }
 

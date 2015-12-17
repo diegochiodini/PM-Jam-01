@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using System.Collections;
 using System;
+using UnityEngine.Assertions;
 
 public class MessageBox : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class MessageBox : MonoBehaviour
     {
         abortClose = true;
         gameObject.SetActive(true);
-        Assert.That(actionButtons != null && actionButtons.Length > 0, "There must be at least one button");
+        Assert.IsTrue(actionButtons != null && actionButtons.Length > 0, "There must be at least one button");
 
         this.message.text = message;
 
@@ -45,7 +46,7 @@ public class MessageBox : MonoBehaviour
         }
         else
         {
-            Assert.That(actions != null && actionButtons.Length == actions.Length, "Must be an action for every assigned button");
+            Assert.IsTrue(actions != null && actionButtons.Length == actions.Length, "Must be an action for every assigned button");
             int i = 0;
             foreach (Button button in actionButtons)
             {

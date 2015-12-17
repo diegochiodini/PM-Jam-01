@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using Data;
 using System;
+using UnityEngine.Assertions;
 
 public class LevelButton : MonoBehaviour, LevelButtonInterface 
 {
@@ -35,7 +36,7 @@ public class LevelButton : MonoBehaviour, LevelButtonInterface
             bool oldState = state.activeSelf;
             state.SetActive(true);
             Text label = state.GetComponentInChildren<Text>();
-            Assert.NotNull(label, "You must provide a label");
+            Assert.IsNotNull(label, "You must provide a label");
             label.text = (level + 1).ToString();
             state.SetActive(oldState);
         }    

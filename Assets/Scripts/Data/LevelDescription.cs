@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine.Assertions;
 
 public class LevelDescription : Description
 {
@@ -36,13 +37,13 @@ public class LevelDescription : Description
     private void ParseSpeeds(string data)
     {
         string[] elements = data.Split(':');
-        Assert.PositiveLength(elements, "You must insert at least one speed value for ID: " + id.ToString());
+        //Assert.PositiveLength(elements, "You must insert at least one speed value for ID: " + id.ToString());
 
         float[] values = new float[elements.Length];
         for (int i = 0; i < elements.Length; i ++)
         {
             values[i] = float.Parse(elements[i]);
-            Assert.Conditional(i % 2 == 1, values[i] > 0f, "You must insert positive value for waiting time: " + values[i].ToString());
+            //Assert.Conditional(i % 2 == 1, values[i] > 0f, "You must insert positive value for waiting time: " + values[i].ToString());
         }
         SetAngularSpeeds(values);
     }
@@ -69,7 +70,7 @@ public class LevelDescription : Description
 
     public void SetAngularSpeeds(float[] values)
     {
-        Assert.That(values.Length == 1 || (values.Length % 2) == 0, "You can specify 1 length with no time value or a pair of number separated by ':'");
+        Assert.IsTrue(values.Length == 1 || (values.Length % 2) == 0, "You can specify 1 length with no time value or a pair of number separated by ':'");
         angularSpeeds.Clear();
 
         if (values.Length == 1)

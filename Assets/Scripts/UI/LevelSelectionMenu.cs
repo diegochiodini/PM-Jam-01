@@ -5,6 +5,7 @@ using System;
 using Data;
 using Utils;
 using Extensions;
+using UnityEngine.Assertions;
 
 public class LevelSelectionMenu : MonoBehaviour 
 {
@@ -79,7 +80,7 @@ public class LevelSelectionMenu : MonoBehaviour
                 element.SetActive(true);
             }
             LevelButtonInterface levelInterface = element.GetInterface<LevelButtonInterface>();
-            Assert.NotNull(levelInterface, "elementTemplate must implement LevelButtonInterface interface");
+            Assert.IsNotNull(levelInterface, "elementTemplate must implement LevelButtonInterface interface");
             levelInterface.SetLevel(i);
             LevelStates levelStatus = provider.GetLevelStatus(i);
             levelInterface.SetState(levelStatus);
@@ -115,7 +116,7 @@ public class LevelSelectionMenu : MonoBehaviour
                 element = grid.transform.GetChild(i).gameObject;
             }
             LevelButtonInterface levelInterface = element.GetInterface<LevelButtonInterface>();
-            Assert.NotNull(levelInterface, "elementTemplate must implement LevelButtonInterface interface");
+            Assert.IsNotNull(levelInterface, "elementTemplate must implement LevelButtonInterface interface");
             levelInterface.SetLevel(i);
             LevelStates levelStatus = provider.GetLevelStatus(i);
             levelInterface.SetState(levelStatus);

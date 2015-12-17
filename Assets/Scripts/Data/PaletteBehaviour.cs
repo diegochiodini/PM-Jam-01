@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System;
 using System.Collections;
+using UnityEngine.Assertions;
 
 public class Palette
 {
@@ -22,7 +23,7 @@ public class Palette
     //public Palette(Color topBackground, Color bottomBackground, Color bigCircle, Color anchor, Color bullet, Color hitBullet)
     public Palette(Color[] colors)
     {
-        Assert.That(colors.Length == PALETTE_SIZE, "You must provide 6 colors for a complete palette.");
+        Assert.IsTrue(colors.Length == PALETTE_SIZE, "You must provide 6 colors for a complete palette.");
         topBackground = colors[0];
         bottomBackground = colors[1];
         bigCircle = colors[2];

@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using System.Linq; 
+using System.Linq;
 using System;
- 
+using UnityEngine.Assertions;
+
 public class CSVReader 
 {
     private Dictionary<string, List<string>> cachedDictionary;
@@ -14,7 +15,7 @@ public class CSVReader
 
     public void LoadFile(string csvString)
     {
-        Assert.That(!string.IsNullOrEmpty(csvString), "You are trying to parse an empty csv string. Please check the file exsists.");
+        Assert.IsTrue(!string.IsNullOrEmpty(csvString), "You are trying to parse an empty csv string. Please check the file exsists.");
         Dictionary<string, List<string>> data = new Dictionary<string, List<string>>();
         string[] lines = csvString.Split("\n"[0]);
         linesCount = lines.Length;

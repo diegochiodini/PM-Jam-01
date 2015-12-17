@@ -8,6 +8,7 @@ using System.Security.Cryptography;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization;
 using Data;
+using UnityEngine.Assertions;
 
 namespace GameUtils
 {
@@ -400,7 +401,7 @@ namespace GameUtils
 
         public static Texture2D TakeScreenshot(int width, int height, Camera screenshotCamera)
         {
-            Assert.That(width > 0 || height > 0, "Invalid size for screenshot texture");
+            Assert.IsTrue(width > 0 || height > 0, "Invalid size for screenshot texture");
             if (screenshotCamera == null)
             {
                 screenshotCamera = Camera.main;

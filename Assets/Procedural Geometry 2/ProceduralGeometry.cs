@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Assertions;
 
 public class ProceduralGeometry  
 {
@@ -25,7 +26,7 @@ public class ProceduralGeometry
 
 	static public Mesh CreateCircleMesh(float radius = 1f, int segments = 3) 
     {
-        Assert.That(radius > 0f && segments > 2, "You must provide valid radius and number of segments (>2)");
+        Assert.IsTrue(radius > 0f && segments > 2, "You must provide valid radius and number of segments (>2)");
 		int numVerts = segments + 1;
 		
 		Mesh plane = new Mesh();
