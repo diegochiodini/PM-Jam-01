@@ -269,7 +269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &160426
 GameObject:
   m_ObjectHideFlags: 1
@@ -354,7 +354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &194902
 GameObject:
   m_ObjectHideFlags: 1
@@ -804,7 +804,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Press Start to play
 --- !u!114 &11455942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1337,8 +1337,8 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -27.5, y: -145.500061}
-  m_SizeDelta: {x: 537, y: 291}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 907, y: 95}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22412208
 RectTransform:
