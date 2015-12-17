@@ -62,7 +62,8 @@ public class MainController : SingletonBehaviour<MainController>, IPointerClickH
 
     private void Start()
     {
-        LoadHome();
+        menu.CharacterSelection();
+        //LoadHome();
     }
 
     private void Update()

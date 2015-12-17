@@ -18,6 +18,7 @@ public class SimpleMenu : SwitchMenu
         MENU_LEVEL,
         MENU_LOADING,
         MENU_MSG_BOX,
+        MENU_CHARACTER,
     }
 
     public GameObject uiBackground;
@@ -61,6 +62,12 @@ public class SimpleMenu : SwitchMenu
         activeChild = (int)MenuTags.MENU_HUD;
         uiBackground.SetActive(false);
         gameBackground.SetActive(true);
+    }
+
+    public void CharacterSelection()
+    {
+        activeChild = (int)MenuTags.MENU_CHARACTER;
+        SelectionMenu menu = GetActiveObjectComponent<SelectionMenu>();
     }
 
     public void Home()
