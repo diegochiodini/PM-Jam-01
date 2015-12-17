@@ -144,8 +144,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 55
-        y: 310
+        x: 51
+        y: 261
         width: 165
         height: 32
       isBreakpoint: 0
@@ -223,8 +223,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 61
-        y: 430
+        x: 62
+        y: 356
         width: 135
         height: 32
       isBreakpoint: 0
@@ -250,7 +250,7 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010100
+        actionEnabled: 00010101
         actionIsOpen: 01010101
         actionStartIndex: 00000000030000000500000009000000
         actionHashCodes: 29b4727b837b830b83d22ec81cc678f6
@@ -327,8 +327,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 69
-        y: 115
+        x: 78
+        y: 107.859375
         width: 122
         height: 48
       isBreakpoint: 0
@@ -432,8 +432,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 80
-        y: 225
+        x: 77
+        y: 183
         width: 100
         height: 32
       isBreakpoint: 0
@@ -450,15 +450,23 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.Trigger2dEvent
         - HutongGames.PlayMaker.Actions.Wait
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        - 
+        actionEnabled: 0001
+        actionIsOpen: 0101
+        actionStartIndex: 0000000004000000
+        actionHashCodes: cae32c923708ec1a
         unityObjectParams: []
-        fsmGameObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
         fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
@@ -466,21 +474,31 @@ MonoBehaviour:
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: PLAYER
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000803f0046494e495348454400
+        byteData: 0200000046494e49534845440000003f0046494e495348454400
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000001700000001000000
+        paramDataType: 070000001200000017000000130000000f0000001700000001000000
         paramName:
+        - trigger
+        - collideTag
+        - sendEvent
+        - storeCollider
         - time
         - finishEvent
         - realTime
-        paramDataPos: 00000000050000000d000000
-        paramByteDataSize: 050000000800000001000000
+        paramDataPos: 000000000000000004000000000000000c0000001100000019000000
+        paramByteDataSize: 04000000000000000800000000000000050000000800000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
