@@ -49,13 +49,7 @@ public class MainGameplay : MonoBehaviour, IGameplay
 
     void Awake()
     {
-        gameCamera = followTarget.gameObject.GetComponent<Camera>();
-        Vector3 position = Vector3.zero;
-        for (int i = 0; i < 10; i++)
-        {
-            position.y = 2f * i;
-            CreateRoller(position, 0.3f, 90f);
-        }
+
     }
 
     void Start()
@@ -75,27 +69,14 @@ public class MainGameplay : MonoBehaviour, IGameplay
             Reset();
         }
 
-        viewportPosition = gameCamera.WorldToViewportPoint(player.transform.position);
-        if (!Validation.VectorComponentsInRange(viewportPosition, 0f, 1f))
-        {
-            SetStatus(GameplayStates.GAME_OVER);
-        }
+
+        //check exit condition
+        //SetStatus(GameplayStates.GAME_OVER);        
     }
 
     private void Reset()
     {
-        player.Reset();
-        followTarget.Reset();
+        //player.Reset();
         SetStatus(GameplayStates.PLAYING);
-    }
-
-    private Roller CreateRoller(Vector3 position, float radius, float angularVelocity)
-    {
-        GameObject rollerObject = GameObject.Instantiate(rollerTemplate);
-        Roller roller = rollerObject.GetComponent<Roller>();
-        roller.CreateGeometry(radius, angularVelocity);
-        rollerObject.transform.parent = rollersContainer.transform;
-        rollerObject.transform.position = position;
-        return roller;
     }
 }
