@@ -18,8 +18,11 @@ public class Player : MonoBehaviour
         Assert.IsNotNull(collider, "Player must have a " + collider.GetType().ToString());
     }
 
-    void OnCollisionEnter2D(Collision2D coll)
+    void OnCollisionEnter2D(Collision2D other)
     {
-
+        if (other.collider.CompareTag(GameConstants.TAG_POLLEN))
+        {
+            other.rigidbody.isKinematic = true;
+        }
     }
 }
