@@ -32,6 +32,35 @@ TextureImporter:
     21300050: Island_06_Top
     21300052: Island_07_Base
     21300054: Island_07_Top
+    21300056: beehive_blue
+    21300058: beehive_pink
+    21300060: beehive_red
+    21300062: beehive_yellow
+    21300064: body
+    21300066: body_bump
+    21300068: details
+    21300070: details_bump
+    21300072: honey
+    21300074: wings1
+    21300076: wings2
+    21300078: wings3
+    21300080: wings4
+    21300082: wings5
+    21300084: wings6
+    21300086: wings7
+    21300088: wings8
+    21300090: Bee_body
+    21300092: Bee_body_bump
+    21300094: Bee_details
+    21300096: Bee_details_bump
+    21300098: Bee_wings1
+    21300100: Bee_wings2
+    21300102: Bee_wings3
+    21300104: Bee_wings4
+    21300106: Bee_wings5
+    21300108: Bee_wings6
+    21300110: Bee_wings7
+    21300112: Bee_wings8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -78,6 +107,126 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
+    - name: Bee_body
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 1868
+        width: 180
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee_body_bump
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 1567
+        width: 144
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee_details
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 396
+        width: 204
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee_details_bump
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1669
+        width: 164
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee_wings1
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 1896
+        width: 70
+        height: 72
+      alignment: 9
+      pivot: {x: .671428561, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee_wings2
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 1506
+        width: 122
+        height: 59
+      alignment: 9
+      pivot: {x: .532786906, y: .61016947}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee_wings3
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 345
+        width: 125
+        height: 49
+      alignment: 9
+      pivot: {x: .375999987, y: .734693885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee_wings4
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 147
+        width: 78
+        height: 63
+      alignment: 9
+      pivot: {x: .269230783, y: .571428597}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee_wings5
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 73
+        width: 67
+        height: 72
+      alignment: 9
+      pivot: {x: .343283594, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee_wings6
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 1807
+        width: 118
+        height: 59
+      alignment: 9
+      pivot: {x: .474576265, y: .61016947}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee_wings7
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 294
+        width: 122
+        height: 49
+      alignment: 9
+      pivot: {x: .639344275, y: .734693885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee_wings8
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 1710
+        width: 73
+        height: 63
+      alignment: 9
+      pivot: {x: .767123282, y: .571428597}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Cloud_01
       rect:
         serializedVersion: 2
@@ -101,8 +250,8 @@ TextureImporter:
     - name: Flower_Leaf
       rect:
         serializedVersion: 2
-        x: 797
-        y: 1192
+        x: 1799
+        y: 2013
         width: 48
         height: 34
       alignment: 4
@@ -111,8 +260,8 @@ TextureImporter:
     - name: Flower_Middle
       rect:
         serializedVersion: 2
-        x: 1065
-        y: 1751
+        x: 1014
+        y: 1441
         width: 38
         height: 38
       alignment: 0
@@ -121,8 +270,8 @@ TextureImporter:
     - name: Flower_Petals_01
       rect:
         serializedVersion: 2
-        x: 1065
-        y: 1791
+        x: 825
+        y: 531
         width: 99
         height: 99
       alignment: 0
@@ -131,8 +280,8 @@ TextureImporter:
     - name: Flower_Petals_02
       rect:
         serializedVersion: 2
-        x: 716
-        y: 1192
+        x: 527
+        y: 212
         width: 79
         height: 80
       alignment: 0
@@ -141,8 +290,8 @@ TextureImporter:
     - name: Flower_Stem
       rect:
         serializedVersion: 2
-        x: 527
-        y: 224
+        x: 972
+        y: 825
         width: 14
         height: 119
       alignment: 7
@@ -241,8 +390,8 @@ TextureImporter:
     - name: Island_05_Top
       rect:
         serializedVersion: 2
-        x: 1263
-        y: 1970
+        x: 716
+        y: 1192
         width: 352
         height: 37
       alignment: 0
@@ -261,8 +410,8 @@ TextureImporter:
     - name: Island_06_Top
       rect:
         serializedVersion: 2
-        x: 1065
-        y: 1892
+        x: 1539
+        y: 1970
         width: 298
         height: 37
       alignment: 0
@@ -281,10 +430,60 @@ TextureImporter:
     - name: Island_07_Top
       rect:
         serializedVersion: 2
-        x: 1260
-        y: 1931
+        x: 716
+        y: 1231
         width: 347
         height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beehive_blue
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 502
+        width: 235
+        height: 232
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beehive_pink
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 1697
+        width: 235
+        height: 232
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beehive_red
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1775
+        width: 235
+        height: 232
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beehive_yellow
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 1463
+        width: 235
+        height: 232
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: honey
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 632
+        width: 118
+        height: 102
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
