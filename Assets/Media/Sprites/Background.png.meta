@@ -61,6 +61,18 @@ TextureImporter:
     21300108: Bee_wings6
     21300110: Bee_wings7
     21300112: Bee_wings8
+    21300114: Bee_pollen
+    21300116: ButtonPlay_hover
+    21300118: ButtonPlay_normal
+    21300120: ButtonPlay_pressed
+    21300122: Cloud1
+    21300124: Cloud2
+    21300126: Logo
+    21300128: WinsBlue
+    21300130: WinsPink
+    21300132: WinsRed
+    21300134: WinsYellow
+    21300136: pollen
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -110,19 +122,9 @@ TextureImporter:
     - name: Bee_body
       rect:
         serializedVersion: 2
-        x: 1539
-        y: 1868
+        x: 489
+        y: 1090
         width: 180
-        height: 100
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Bee_body_bump
-      rect:
-        serializedVersion: 2
-        x: 1301
-        y: 1567
-        width: 144
         height: 100
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -130,8 +132,8 @@ TextureImporter:
     - name: Bee_details
       rect:
         serializedVersion: 2
-        x: 588
-        y: 396
+        x: 489
+        y: 705
         width: 204
         height: 104
       alignment: 0
@@ -140,18 +142,28 @@ TextureImporter:
     - name: Bee_details_bump
       rect:
         serializedVersion: 2
-        x: 1302
-        y: 1669
+        x: 489
+        y: 984
         width: 164
         height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bee_pollen
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 117
+        width: 76
+        height: 98
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bee_wings1
       rect:
         serializedVersion: 2
-        x: 1721
-        y: 1896
+        x: 1829
+        y: 860
         width: 70
         height: 72
       alignment: 9
@@ -160,8 +172,8 @@ TextureImporter:
     - name: Bee_wings2
       rect:
         serializedVersion: 2
-        x: 1301
-        y: 1506
+        x: 1299
+        y: 897
         width: 122
         height: 59
       alignment: 9
@@ -170,8 +182,8 @@ TextureImporter:
     - name: Bee_wings3
       rect:
         serializedVersion: 2
-        x: 588
-        y: 345
+        x: 1755
+        y: 1121
         width: 125
         height: 49
       alignment: 9
@@ -180,8 +192,8 @@ TextureImporter:
     - name: Bee_wings4
       rect:
         serializedVersion: 2
-        x: 527
-        y: 147
+        x: 632
+        y: 818
         width: 78
         height: 63
       alignment: 9
@@ -190,8 +202,8 @@ TextureImporter:
     - name: Bee_wings5
       rect:
         serializedVersion: 2
-        x: 527
-        y: 73
+        x: 1829
+        y: 968
         width: 67
         height: 72
       alignment: 9
@@ -200,8 +212,8 @@ TextureImporter:
     - name: Bee_wings6
       rect:
         serializedVersion: 2
-        x: 1539
-        y: 1807
+        x: 489
+        y: 811
         width: 118
         height: 59
       alignment: 9
@@ -210,8 +222,8 @@ TextureImporter:
     - name: Bee_wings7
       rect:
         serializedVersion: 2
-        x: 527
-        y: 294
+        x: 1882
+        y: 1122
         width: 122
         height: 49
       alignment: 9
@@ -220,12 +232,62 @@ TextureImporter:
     - name: Bee_wings8
       rect:
         serializedVersion: 2
-        x: 1468
-        y: 1710
+        x: 1919
+        y: 1446
         width: 73
         height: 63
       alignment: 9
       pivot: {x: .767123282, y: .571428597}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ButtonPlay_hover
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 1763
+        width: 326
+        height: 284
+      alignment: 9
+      pivot: {x: .5, y: .492957741}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ButtonPlay_normal
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 1446
+        width: 326
+        height: 284
+      alignment: 9
+      pivot: {x: .5, y: .492957741}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ButtonPlay_pressed
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1121
+        width: 326
+        height: 284
+      alignment: 9
+      pivot: {x: .5, y: .507042229}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cloud1
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 860
+        width: 400
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cloud2
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 409
+        width: 300
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Cloud_01
       rect:
@@ -250,8 +312,8 @@ TextureImporter:
     - name: Flower_Leaf
       rect:
         serializedVersion: 2
-        x: 1799
-        y: 2013
+        x: 1299
+        y: 860
         width: 48
         height: 34
       alignment: 4
@@ -260,8 +322,8 @@ TextureImporter:
     - name: Flower_Middle
       rect:
         serializedVersion: 2
-        x: 1014
-        y: 1441
+        x: 655
+        y: 984
         width: 38
         height: 38
       alignment: 0
@@ -270,8 +332,8 @@ TextureImporter:
     - name: Flower_Petals_01
       rect:
         serializedVersion: 2
-        x: 825
-        y: 531
+        x: 611
+        y: 883
         width: 99
         height: 99
       alignment: 0
@@ -280,8 +342,8 @@ TextureImporter:
     - name: Flower_Petals_02
       rect:
         serializedVersion: 2
-        x: 527
-        y: 212
+        x: 484
+        y: 135
         width: 79
         height: 80
       alignment: 0
@@ -290,8 +352,8 @@ TextureImporter:
     - name: Flower_Stem
       rect:
         serializedVersion: 2
-        x: 972
-        y: 825
+        x: 700
+        y: 1071
         width: 14
         height: 119
       alignment: 7
@@ -300,8 +362,8 @@ TextureImporter:
     - name: Island_01_Base
       rect:
         serializedVersion: 2
-        x: 1
-        y: 30
+        x: 712
+        y: 283
         width: 524
         height: 313
       alignment: 0
@@ -310,8 +372,8 @@ TextureImporter:
     - name: Island_01_Top
       rect:
         serializedVersion: 2
-        x: 716
-        y: 1931
+        x: 1427
+        y: 1042
         width: 542
         height: 38
       alignment: 0
@@ -320,8 +382,8 @@ TextureImporter:
     - name: Island_02_Base
       rect:
         serializedVersion: 2
-        x: 489
-        y: 946
+        x: 712
+        y: 37
         width: 531
         height: 244
       alignment: 0
@@ -330,8 +392,8 @@ TextureImporter:
     - name: Island_02_Top
       rect:
         serializedVersion: 2
-        x: 716
-        y: 1971
+        x: 1427
+        y: 1082
         width: 545
         height: 37
       alignment: 0
@@ -340,8 +402,8 @@ TextureImporter:
     - name: Island_03_Base
       rect:
         serializedVersion: 2
-        x: 1
-        y: 345
+        x: 712
+        y: 598
         width: 585
         height: 358
       alignment: 0
@@ -350,8 +412,8 @@ TextureImporter:
     - name: Island_03_Top
       rect:
         serializedVersion: 2
-        x: 716
-        y: 2010
+        x: 1427
+        y: 1407
         width: 593
         height: 37
       alignment: 0
@@ -360,8 +422,8 @@ TextureImporter:
     - name: Island_04_Base
       rect:
         serializedVersion: 2
-        x: 489
-        y: 736
+        x: 1
+        y: 7
         width: 481
         height: 208
       alignment: 0
@@ -370,8 +432,8 @@ TextureImporter:
     - name: Island_04_Top
       rect:
         serializedVersion: 2
-        x: 1311
-        y: 2009
+        x: 1299
+        y: 591
         width: 486
         height: 38
       alignment: 0
@@ -380,8 +442,8 @@ TextureImporter:
     - name: Island_05_Base
       rect:
         serializedVersion: 2
-        x: 716
-        y: 1481
+        x: 1648
+        y: 639
         width: 346
         height: 219
       alignment: 0
@@ -390,8 +452,8 @@ TextureImporter:
     - name: Island_05_Top
       rect:
         serializedVersion: 2
-        x: 716
-        y: 1192
+        x: 1245
+        y: 118
         width: 352
         height: 37
       alignment: 0
@@ -400,8 +462,8 @@ TextureImporter:
     - name: Island_06_Base
       rect:
         serializedVersion: 2
-        x: 716
-        y: 1281
+        x: 1238
+        y: 391
         width: 296
         height: 198
       alignment: 0
@@ -410,8 +472,8 @@ TextureImporter:
     - name: Island_06_Top
       rect:
         serializedVersion: 2
-        x: 1539
-        y: 1970
+        x: 1245
+        y: 40
         width: 298
         height: 37
       alignment: 0
@@ -420,8 +482,8 @@ TextureImporter:
     - name: Island_07_Base
       rect:
         serializedVersion: 2
-        x: 716
-        y: 1702
+        x: 1299
+        y: 631
         width: 347
         height: 227
       alignment: 0
@@ -430,18 +492,68 @@ TextureImporter:
     - name: Island_07_Top
       rect:
         serializedVersion: 2
-        x: 716
-        y: 1231
+        x: 1245
+        y: 79
         width: 347
         height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Logo
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1446
+        width: 873
+        height: 601
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WinsBlue
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 958
+        width: 709
+        height: 242
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WinsPink
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1202
+        width: 709
+        height: 242
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WinsRed
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 217
+        width: 709
+        height: 242
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WinsYellow
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 461
+        width: 709
+        height: 242
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: beehive_blue
       rect:
         serializedVersion: 2
-        x: 588
-        y: 502
+        x: 1719
+        y: 175
         width: 235
         height: 232
       alignment: 0
@@ -450,8 +562,8 @@ TextureImporter:
     - name: beehive_pink
       rect:
         serializedVersion: 2
-        x: 1065
-        y: 1697
+        x: 1482
+        y: 157
         width: 235
         height: 232
       alignment: 0
@@ -460,8 +572,8 @@ TextureImporter:
     - name: beehive_red
       rect:
         serializedVersion: 2
-        x: 1302
-        y: 1775
+        x: 1755
+        y: 1173
         width: 235
         height: 232
       alignment: 0
@@ -470,8 +582,8 @@ TextureImporter:
     - name: beehive_yellow
       rect:
         serializedVersion: 2
-        x: 1064
-        y: 1463
+        x: 1245
+        y: 157
         width: 235
         height: 232
       alignment: 0
@@ -480,10 +592,20 @@ TextureImporter:
     - name: honey
       rect:
         serializedVersion: 2
-        x: 825
-        y: 632
+        x: 489
+        y: 880
         width: 118
         height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pollen
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 409
+        width: 76
+        height: 76
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
