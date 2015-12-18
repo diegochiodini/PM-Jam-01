@@ -15,12 +15,12 @@ public class PollenCollector : MonoBehaviour
             other.transform.GetComponent<Rigidbody2D>().isKinematic = true;
             other.transform.SetParent(transform);
             other.transform.localPosition = Vector2.up * -0.8f;
-            other.collider.enabled = false;
+            other.collider.isTrigger = true;
             pollenCollider = other.collider;
         }
         else if (pollenCollider != null && other.collider.CompareTag(GameConstants.TAG_PLAYER))
         {
-            //pollenCollider.enabled = true;
+            //pollenCollider.isTrigger = false;
             pollenCollider.transform.SetParent(null);
             pollenCollider.GetComponent<Rigidbody2D>().isKinematic = false;
             pollenCollider = null;
