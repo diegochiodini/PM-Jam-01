@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.Assertions;
 using UnityEngine.Events;
 
-public class Player : MonoBehaviour 
+public class PollenCollector : MonoBehaviour 
 {
     private Rigidbody2D rbody;
     private CircleCollider2D collider;

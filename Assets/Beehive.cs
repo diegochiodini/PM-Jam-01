@@ -24,17 +24,18 @@ public class Beehive : MonoBehaviour
         {
             honey[i].gameObject.SetActive(false);
         }
-        beehiveCollider = GetComponent<Collider2D>();
+        beehiveCollider = GetComponent<Collider2D>();       
 	}
 	
     void OnCollisionEnter2D (Collision2D other)
     {
         if (other.collider.CompareTag(GameConstants.TAG_PLAYER))
         {
-            if(other.transform.GetComponent<Player>().pollenCollider != null)
+            if(other.transform.GetComponent<PollenCollector>().pollenCollider != null)
             {
                 AddPoint();
-                other.transform.GetComponent<Player>().RemovePollen();
+                other.transform.GetComponent<PollenCollector>().RemovePollen();
+
             }
         }
     }

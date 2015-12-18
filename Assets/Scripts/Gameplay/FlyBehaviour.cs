@@ -43,7 +43,7 @@ public class FlyBehaviour : MonoBehaviour
 
     public void OnChangeControllerDirection()
     {
-        Debug.Log("Change!");
+        //Debug.Log("Change!");
         _tempScale = transform.localScale;
         _tempScale.x *= -1f;
         transform.localScale = _tempScale;

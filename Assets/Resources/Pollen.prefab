@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11422366}
   - 212: {fileID: 21297850}
   - 60: {fileID: 6011332}
+  - 114: {fileID: 11442276}
   m_Layer: 0
   m_Name: Pollen
   m_TagString: POLLEN
@@ -79,6 +80,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blinkTime: 3
   frequency: 4
+--- !u!114 &11442276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce88dbcbea5d5a408b1d96884ad32b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blinkTime: 1
+  frequency: 50
 --- !u!212 &21297850
 SpriteRenderer:
   m_ObjectHideFlags: 1
