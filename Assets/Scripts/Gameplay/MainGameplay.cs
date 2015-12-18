@@ -2,14 +2,13 @@
 using System.Collections;
 using GameUtils;
 using Data;
+using UnityEngine.Assertions;
+using UnityEngine.Events;
+using GameEvents;
 
 public class MainGameplay : MonoBehaviour, IGameplay
 {
-    public GameObject rollersContainer;
-    public GameObject rollerTemplate;
-
-    //public PollenCollector player;
-    public FollowTarget followTarget;
+    public FlowerSpawner flowerSpawner;
 
     private Camera gameCamera;
     private Vector3 viewportPosition;
@@ -49,12 +48,13 @@ public class MainGameplay : MonoBehaviour, IGameplay
 
     void Awake()
     {
-
+        Assert.IsNotNull(flowerSpawner);
     }
 
     void Start()
     {
         SetStatus(GameplayStates.STARTED);
+        flowerSpawner.SpawnFlower();
     }
 
     void Update()
@@ -78,5 +78,10 @@ public class MainGameplay : MonoBehaviour, IGameplay
     {
         //player.Reset();
         SetStatus(GameplayStates.PLAYING);
+    }
+
+    public void OnScore()
+    {
+        flowerSpawner.SpawnFlower();
     }
 }

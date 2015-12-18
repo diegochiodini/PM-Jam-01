@@ -8,6 +8,7 @@ TagManager:
   - PLAYER
   - FLOWERSPAWNPOINT
   - LAND
+  - BOUNDS
   layers:
   - Default
   - TransparentFX

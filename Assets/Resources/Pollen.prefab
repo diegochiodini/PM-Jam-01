@@ -12,6 +12,7 @@ GameObject:
   - 58: {fileID: 5850206}
   - 114: {fileID: 11423362}
   - 212: {fileID: 21287680}
+  - 114: {fileID: 11471902}
   m_Layer: 0
   m_Name: Pollen
   m_TagString: POLLEN
@@ -73,6 +74,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blinkTime: 1
   frequency: 50
+--- !u!114 &11471902
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5db7f1ec3eb87524db02437785183bae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!212 &21287680
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -109,12 +126,20 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: OnDestroy.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: blinkTime
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: frequency
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: OnDestroy.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

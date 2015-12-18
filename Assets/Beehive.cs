@@ -1,10 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
+using GameEvents;
 
 public class Beehive : MonoBehaviour
 {
-    public enum Team { Red, Blue, Pink, Yellow };
     public Team team;
+
+    public UnityEvent OnScore;
+
 
     public int pointsToWin;
     private Collider2D beehiveCollider;
@@ -31,11 +35,12 @@ public class Beehive : MonoBehaviour
     {
         if (other.collider.CompareTag(GameConstants.TAG_PLAYER))
         {
-            if(other.transform.GetComponent<PollenCollector>().pollenCollider != null)
+            PollenCollector collector = other.transform.GetComponent<PollenCollector>();
+            Player player = collector.GetComponentInParent<Player>();
+            if (player.team == team && collector.pollenCollider != null)
             {
                 AddPoint();
-                other.transform.GetComponent<PollenCollector>().RemovePollen();
-
+                collector.RemovePollen();
             }
         }
     }
@@ -46,6 +51,11 @@ public class Beehive : MonoBehaviour
         pollenInHive++;
 
         honey[pollenInHive - 1].gameObject.SetActive(true);
+
+        if (OnScore != null)
+        {
+            OnScore.Invoke();
+        }
 
         if(pollenInHive == pointsToWin)
         {

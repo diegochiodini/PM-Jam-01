@@ -114,6 +114,7 @@ GameObject:
   - 23: {fileID: 2317814}
   - 50: {fileID: 5068552}
   - 114: {fileID: 11486236}
+  - 114: {fileID: 11448024}
   m_Layer: 0
   m_Name: Player1
   m_TagString: PLAYER
@@ -153,7 +154,7 @@ Transform:
   m_GameObject: {fileID: 156210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 435370}
   - {fileID: 412144}
@@ -193,7 +194,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 176134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.1500001, z: 0}
+  m_LocalPosition: {x: 1.19600046, y: 2.09753871, z: 0}
   m_LocalScale: {x: .300000012, y: .300000012, z: .300000012}
   m_Children:
   - {fileID: 461092}
@@ -353,6 +354,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11448024
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a22554e7ccce8541b9b7ea657265b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  team: 3
 --- !u!114 &11451718
 MonoBehaviour:
   m_ObjectHideFlags: 1
