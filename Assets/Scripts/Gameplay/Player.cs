@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Assertions;
+using UnityEngine.Events;
 
 public class Player : MonoBehaviour 
 {
@@ -8,6 +9,10 @@ public class Player : MonoBehaviour
     private CircleCollider2D collider;
 
     private Vector2 defaultPosition;
+
+    private Collider2D pollenCollider;
+
+    public UnityEvent onPollenDrop;
 
     void Awake()
     {
@@ -22,7 +27,23 @@ public class Player : MonoBehaviour
     {
         if (other.collider.CompareTag(GameConstants.TAG_POLLEN))
         {
-            other.rigidbody.isKinematic = true;
+            other.transform.GetComponent<Rigidbody2D>().isKinematic = true;
+            other.transform.SetParent(transform);
+            other.transform.localPosition = Vector2.up * -0.8f;
+            other.collider.enabled = false;
+            pollenCollider = other.collider;
+        }
+        else if (pollenCollider != null && other.collider.CompareTag(GameConstants.TAG_PLAYER))
+        {
+            //pollenCollider.enabled = true;
+            pollenCollider.transform.SetParent(null);
+            pollenCollider.GetComponent<Rigidbody2D>().isKinematic = false;
+            pollenCollider = null;
+
+            if (onPollenDrop != null)
+            {
+                onPollenDrop.Invoke();
+            }
         }
     }
 }
