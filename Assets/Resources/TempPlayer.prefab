@@ -241,8 +241,8 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.GetParent
+        - HutongGames.PlayMaker.Actions.SetParent
         - HutongGames.PlayMaker.Actions.SetParent
         - HutongGames.PlayMaker.Actions.SetIsKinematic2d
         customNames:
@@ -250,14 +250,20 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 00010101
+        actionEnabled: 01010101
         actionIsOpen: 01010101
-        actionStartIndex: 00000000030000000500000009000000
-        actionHashCodes: 29b4727b837b830b83d22ec81cc678f6
+        actionStartIndex: 0000000002000000060000000a000000
+        actionHashCodes: 837b830b83d22ec883d22ec81cc678f6
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
           name: pollen
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 0
+          name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -293,6 +299,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: pollen
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -302,16 +316,13 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 000169734361727279696e67010000010001000100
+        byteData: 00000000010001000100
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1100000011000000010000001400000013000000140000001300000011000000110000001400000011000000
+        paramDataType: 140000001300000014000000130000001100000011000000140000001300000011000000110000001400000011000000
         paramName:
-        - boolVariable
-        - boolValue
-        - everyFrame
         - gameObject
         - storeResult
         - gameObject
@@ -319,9 +330,13 @@ MonoBehaviour:
         - resetLocalPosition
         - resetLocalRotation
         - gameObject
+        - parent
+        - resetLocalPosition
+        - resetLocalRotation
+        - gameObject
         - isKinematic
-        paramDataPos: 000000000c0000000e000000000000000000000001000000010000000f000000110000000200000013000000
-        paramByteDataSize: 0c00000002000000010000000000000000000000000000000000000002000000020000000000000002000000
+        paramDataPos: 000000000000000001000000010000000000000002000000020000000200000004000000060000000300000008000000
+        paramByteDataSize: 000000000000000000000000000000000200000002000000000000000000000002000000020000000000000002000000
     - name: Carrying Pollen
       description: 
       colorIndex: 0
