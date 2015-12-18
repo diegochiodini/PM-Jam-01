@@ -6,6 +6,7 @@ TagManager:
   tags:
   - POLLEN
   - PLAYER
+  - FLOWERSPAWNPOINT
   layers:
   - Default
   - TransparentFX
