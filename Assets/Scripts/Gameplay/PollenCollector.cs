@@ -14,6 +14,10 @@ public class PollenCollector : MonoBehaviour
 
     public UnityEvent onPollenDrop;
 
+    public Transform regularState;
+    public Transform bumpState;
+    public float bumpStateTime;
+
     void Awake()
     {
         defaultPosition = transform.position;
@@ -21,6 +25,11 @@ public class PollenCollector : MonoBehaviour
         Assert.IsNotNull(rbody, "Player must have a Rigidbody2D");
         collider = GetComponent<CircleCollider2D>();
         Assert.IsNotNull(collider, "Player must have a " + collider.GetType().ToString());
+    }
+
+    void Start()
+    {
+        bumpState.gameObject.SetActive(false);
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -40,6 +49,13 @@ public class PollenCollector : MonoBehaviour
             pollenCollider.GetComponent<Rigidbody2D>().isKinematic = false;
             pollenCollider = null;
 
+            if(regularState && bumpState)
+            {
+                IsBumped();
+                StartCoroutine(IsBumpedTimer());
+            }
+
+
             if (onPollenDrop != null)
             {
                 onPollenDrop.Invoke();
@@ -54,4 +70,24 @@ public class PollenCollector : MonoBehaviour
             Destroy(pollenCollider.gameObject);
         }
     }
+
+    private void IsBumped()
+    {
+        regularState.gameObject.SetActive(false);
+        bumpState.gameObject.SetActive(true);
+    }
+
+    private void Recover()
+    {
+        regularState.gameObject.SetActive(true);
+        bumpState.gameObject.SetActive(false);
+    }
+
+    IEnumerator IsBumpedTimer()
+    {
+        yield return new WaitForSeconds(bumpStateTime);
+        Recover();
+        StopAllCoroutines();
+    }
+
 }
