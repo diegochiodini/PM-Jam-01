@@ -21,12 +21,12 @@ public class FlyBehaviour : MonoBehaviour
         _body = GetComponent<Rigidbody2D>();
         DistanceJoint2D joint = GetComponent<DistanceJoint2D>();
         joint.distance = Distance;
-        StartCoroutine(ChangeDirection());
+        //StartCoroutine(ChangeDirection());
     }
 
     private void Update()
     {
-        _body.velocity =  _direction * speed * _actualDistance;
+        _body.velocity =  _direction * speed;
     }
 
     IEnumerator ChangeDirection()
@@ -38,7 +38,7 @@ public class FlyBehaviour : MonoBehaviour
         _actualDistance = _direction.magnitude * Random.value;
         _direction.Normalize();
 
-        StartCoroutine(ChangeDirection());
+        //StartCoroutine(ChangeDirection());
     }
 
     public void OnChangeControllerDirection()

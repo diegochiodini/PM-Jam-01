@@ -52,12 +52,17 @@ public class Beehive : MonoBehaviour
 
         honey[pollenInHive - 1].gameObject.SetActive(true);
 
-        if (OnScore != null)
+        //if (OnScore != null)
+        //{
+        //    OnScore.Invoke();
+        //}
+        //else
         {
-            OnScore.Invoke();
+            MainGameplay gameplay = GetComponentInParent<MainGameplay>();
+            gameplay.OnScore();
         }
 
-        if(pollenInHive == pointsToWin)
+        if (pollenInHive == pointsToWin)
         {
             GameOver(team);
         }

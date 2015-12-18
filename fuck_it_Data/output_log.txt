@@ -1,0 +1,74 @@
+Initialize engine version: 5.2.3p1 (16366bd81e69)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 960 (ID=0x1401)
+    Vendor:   NVIDIA
+    VRAM:     1969 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\chiod\Documents\GitHub\PM-Jam-01\fuck_it_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\chiod\Documents\GitHub\PM-Jam-01\fuck_it_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\chiod\Documents\GitHub\PM-Jam-01\fuck_it_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\chiod\Documents\GitHub\PM-Jam-01\fuck_it_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\chiod\Documents\GitHub\PM-Jam-01\fuck_it_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\chiod\Documents\GitHub\PM-Jam-01\fuck_it_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\chiod\Documents\GitHub\PM-Jam-01\fuck_it_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\chiod\Documents\GitHub\PM-Jam-01\fuck_it_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\chiod\Documents\GitHub\PM-Jam-01\fuck_it_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\chiod\Documents\GitHub\PM-Jam-01\fuck_it_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\chiod\Documents\GitHub\PM-Jam-01\fuck_it_Data\Managed\PlayMaker.dll (this message is harmless)
+Loading C:\Users\chiod\Documents\GitHub\PM-Jam-01\fuck_it_Data\Managed\PlayMaker.dll into Unity Child Domain
+Platform assembly: C:\Users\chiod\Documents\GitHub\PM-Jam-01\fuck_it_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.034 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\chiod\Documents\GitHub\PM-Jam-01\fuck_it_Data\Managed\System.dll (this message is harmless)
+Player: 4 x: Horizontal4 y: Vertical4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Player: 1 x: Horizontal1 y: Vertical1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Player: 2 x: Horizontal2 y: Vertical2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Player: 3 x: Horizontal3 y: Vertical3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2970 -> priority: 1 
+  Thread -> id: 1f18 -> priority: 1 
+Point added!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Point added!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Point added!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Red WON!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Point added!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Point added!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Point added!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+

@@ -85,11 +85,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5db7f1ec3eb87524db02437785183bae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnDestroy:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!212 &21287680
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -127,7 +122,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: OnDestroy.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: blinkTime
@@ -140,6 +135,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: OnDestroy.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: OnDestroy.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

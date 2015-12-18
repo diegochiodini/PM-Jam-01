@@ -7,8 +7,6 @@ using UnityEngine.Events;
 
 class Pollen : MonoBehaviour
 {
-    public UnityEvent OnDestroy;
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(GameConstants.TAG_LAND))
@@ -17,11 +15,19 @@ class Pollen : MonoBehaviour
         }
         else if (other.CompareTag(GameConstants.TAG_BOUNDS))
         {
+            MainGameplay gameplay = GetComponentInParent<MainGameplay>();
+            gameplay.OnScore();
             Destroy(gameObject);
-            if (OnDestroy != null)
-            {
-                OnDestroy.Invoke();
-            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.CompareTag(GameConstants.TAG_BOUNDS))
+        {
+            MainGameplay gameplay = GameObject.FindObjectOfType<MainGameplay>();
+            gameplay.OnScore();
+            Destroy(gameObject);
         }
     }
 }

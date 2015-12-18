@@ -55,6 +55,11 @@ public class MainGameplay : MonoBehaviour, IGameplay
     {
         SetStatus(GameplayStates.STARTED);
         flowerSpawner.SpawnFlower();
+        flowerSpawner.SpawnFlower();
+        flowerSpawner.SpawnFlower();
+        flowerSpawner.SpawnFlower();
+        flowerSpawner.SpawnFlower();
+        flowerSpawner.SpawnFlower();
     }
 
     void Update()

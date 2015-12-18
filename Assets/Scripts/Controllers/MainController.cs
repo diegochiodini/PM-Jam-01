@@ -313,7 +313,8 @@ public class MainController : SingletonBehaviour<MainController>, IPointerClickH
             OnLevelEnds(false);
         }
         Pause();
-        menu.Home();
+        //menu.Home();
+        OnPlayGameClick();
     }
 
     protected IEnumerator Win()

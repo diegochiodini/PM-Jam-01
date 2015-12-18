@@ -34,10 +34,10 @@ public class SimpleController : MonoBehaviour
         _direction.Set(Input.GetAxis(_horizontalAxis), Input.GetAxis(_verticalAxis));       
         _body.velocity = _direction * speed;          
 
-        if (_direction.x != 0f && Mathf.Sign(_previousDirection) != Mathf.Sign(_direction.x))
-        {
-            _previousDirection *= -1f;
-            OnChangeDirection.Invoke();
-        }
+        //if (_direction.x != 0f && Mathf.Sign(_previousDirection) != Mathf.Sign(_direction.x))
+        //{
+        //    _previousDirection *= -1f;
+        //    OnChangeDirection.Invoke();
+        //}
     }
 }
