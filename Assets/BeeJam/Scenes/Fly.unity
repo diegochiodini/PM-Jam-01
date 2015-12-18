@@ -85,24 +85,12 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &5572001 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 124876, guid: 47b570c26c5b54b4a965d095b1159bee, type: 2}
+--- !u!114 &5572003 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11439660, guid: 47b570c26c5b54b4a965d095b1159bee,
+    type: 2}
   m_PrefabInternal: {fileID: 377496529}
---- !u!232 &5572008
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 5572001}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 608362680}
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_Distance: 1
-  m_MaxDistanceOnly: 0
+  m_Script: {fileID: 11500000, guid: 6796230308d96014282b44574c4399f5, type: 3}
 --- !u!1001 &34930793
 Prefab:
   m_ObjectHideFlags: 0
@@ -184,18 +172,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23243324, guid: 47b570c26c5b54b4a965d095b1159bee, type: 2}
+      propertyPath: m_ConnectedRigidBody
+      value: 
+      objectReference: {fileID: 608362680}
     - target: {fileID: 11439660, guid: 47b570c26c5b54b4a965d095b1159bee, type: 2}
       propertyPath: target
       value: 
       objectReference: {fileID: 608362683}
-    - target: {fileID: 11439660, guid: 47b570c26c5b54b4a965d095b1159bee, type: 2}
-      propertyPath: RefreshRate
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11439660, guid: 47b570c26c5b54b4a965d095b1159bee, type: 2}
-      propertyPath: speed
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 47b570c26c5b54b4a965d095b1159bee, type: 2}
   m_IsPrefabParent: 0
@@ -301,6 +285,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11414324, guid: a69843a0f231bf645977027fab6cc70e, type: 2}
+      propertyPath: OnChangeDirection.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 419980, guid: a69843a0f231bf645977027fab6cc70e, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -335,11 +323,43 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11414324, guid: a69843a0f231bf645977027fab6cc70e, type: 2}
       propertyPath: speed
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2392524, guid: a69843a0f231bf645977027fab6cc70e, type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414324, guid: a69843a0f231bf645977027fab6cc70e, type: 2}
+      propertyPath: OnChangeDirection.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414324, guid: a69843a0f231bf645977027fab6cc70e, type: 2}
+      propertyPath: OnChangeDirection.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414324, guid: a69843a0f231bf645977027fab6cc70e, type: 2}
+      propertyPath: OnChangeDirection.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5572003}
+    - target: {fileID: 11414324, guid: a69843a0f231bf645977027fab6cc70e, type: 2}
+      propertyPath: OnChangeDirection.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnChangeControllerDirection
+      objectReference: {fileID: 0}
+    - target: {fileID: 11414324, guid: a69843a0f231bf645977027fab6cc70e, type: 2}
+      propertyPath: OnChangeDirection.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 419980, guid: a69843a0f231bf645977027fab6cc70e, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 419980, guid: a69843a0f231bf645977027fab6cc70e, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 419980, guid: a69843a0f231bf645977027fab6cc70e, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .300000012
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11497216, guid: a69843a0f231bf645977027fab6cc70e, type: 2}

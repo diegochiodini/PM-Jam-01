@@ -12,7 +12,9 @@ public class FlyBehaviour : MonoBehaviour
     public float RefreshRate = 1f;
 
     public Transform target;
-    public float speed = 1f;
+    public float speed = -1f;
+
+    Vector3 _tempScale;
 
     void Awake()
     {
@@ -37,5 +39,13 @@ public class FlyBehaviour : MonoBehaviour
         _direction.Normalize();
 
         StartCoroutine(ChangeDirection());
+    }
+
+    public void OnChangeControllerDirection()
+    {
+        Debug.Log("Change!");
+        _tempScale = transform.localScale;
+        _tempScale.x *= -1f;
+        transform.localScale = _tempScale;
     }
 }
