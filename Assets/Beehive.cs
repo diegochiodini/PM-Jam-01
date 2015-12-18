@@ -36,8 +36,8 @@ public class Beehive : MonoBehaviour
         if (other.collider.CompareTag(GameConstants.TAG_PLAYER))
         {
             PollenCollector collector = other.transform.GetComponent<PollenCollector>();
-            Player player = collector.GetComponentInParent<Player>();
-            if (player.team == team && collector.pollenCollider != null)
+            //Player player = collector.GetComponentInParent<Player>();
+            if (collector.HasPollen)
             {
                 AddPoint();
                 collector.RemovePollen();

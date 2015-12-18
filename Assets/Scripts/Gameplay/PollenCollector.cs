@@ -10,13 +10,21 @@ public class PollenCollector : MonoBehaviour
 
     private Vector2 defaultPosition;
 
-    public Collider2D pollenCollider;
+    Collider2D pollenCollider;
 
     public UnityEvent onPollenDrop;
 
     public Transform regularState;
     public Transform bumpState;
     public float bumpStateTime;
+
+    public bool HasPollen
+    {
+        get
+        {
+            return pollenCollider != null;
+        }
+    }
 
     void Awake()
     {

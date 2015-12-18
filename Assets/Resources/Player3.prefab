@@ -29,6 +29,7 @@ GameObject:
   - 23: {fileID: 2346958}
   - 50: {fileID: 5053804}
   - 114: {fileID: 11446006}
+  - 114: {fileID: 11437802}
   m_Layer: 0
   m_Name: Player3
   m_TagString: PLAYER
@@ -236,7 +237,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 148312}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -.853999496, y: 2.51753855, z: 0}
   m_LocalScale: {x: .300000012, y: .300000012, z: .300000012}
   m_Children:
   - {fileID: 487338}
@@ -598,7 +599,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db693015a605c9f4b9b9cc5dd06dc47b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pollenCollider: {fileID: 0}
   onPollenDrop:
     m_PersistentCalls:
       m_Calls:
@@ -617,7 +617,19 @@ MonoBehaviour:
       PublicKeyToken=null
   regularState: {fileID: 490750}
   bumpState: {fileID: 427450}
-  bumpStateTime: 2
+  bumpStateTime: 0
+--- !u!114 &11437802
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a22554e7ccce8541b9b7ea657265b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  team: 2
 --- !u!114 &11446006
 MonoBehaviour:
   m_ObjectHideFlags: 1
