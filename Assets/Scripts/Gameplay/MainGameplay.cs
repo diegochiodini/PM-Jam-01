@@ -8,7 +8,7 @@ public class MainGameplay : MonoBehaviour, IGameplay
     public GameObject rollersContainer;
     public GameObject rollerTemplate;
 
-    public Player player;
+    public PollenCollector player;
     public FollowTarget followTarget;
 
     private Camera gameCamera;

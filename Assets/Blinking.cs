@@ -10,7 +10,7 @@ public class Blinking : MonoBehaviour
 
     void Start()
     {
-        OnBlinkActivate();
+        //OnBlinkActivate();
     }
 
 

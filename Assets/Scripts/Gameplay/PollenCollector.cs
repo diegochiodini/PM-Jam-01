@@ -1,29 +1,14 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.Assertions;
 using UnityEngine.Events;
 
-public class Player : MonoBehaviour 
+[RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(Rigidbody2D))]
+public class PollenCollector : MonoBehaviour
 {
-    private Rigidbody2D rbody;
-    private CircleCollider2D collider;
-
-    private Vector2 defaultPosition;
-
     private Collider2D pollenCollider;
-
     public UnityEvent onPollenDrop;
 
-    void Awake()
-    {
-        defaultPosition = transform.position;
-        rbody = GetComponent<Rigidbody2D>();
-        Assert.IsNotNull(rbody, "Player must have a Rigidbody2D");
-        collider = GetComponent<CircleCollider2D>();
-        Assert.IsNotNull(collider, "Player must have a " + collider.GetType().ToString());
-    }
-
-    void OnCollisionEnter2D(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.CompareTag(GameConstants.TAG_POLLEN))
         {
