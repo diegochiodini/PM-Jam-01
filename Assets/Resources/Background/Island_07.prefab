@@ -26,7 +26,7 @@ GameObject:
   - 212: {fileID: 21263516}
   m_Layer: 0
   m_Name: Island_07_Base
-  m_TagString: Untagged
+  m_TagString: LAND
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,7 +56,7 @@ GameObject:
   - 4: {fileID: 493036}
   m_Layer: 0
   m_Name: Island_07
-  m_TagString: Untagged
+  m_TagString: LAND
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ GameObject:
   - 61: {fileID: 6152814}
   m_Layer: 0
   m_Name: Island_07_Top
-  m_TagString: Untagged
+  m_TagString: LAND
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -273,7 +273,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: LAND
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 155874}
